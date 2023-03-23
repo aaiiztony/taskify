@@ -1,0 +1,24 @@
+:root{
+    --gradient: linear-gradient(45deg,
+    #845ec2 ,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871    
+    );
+}
+
+.container{
+    animation: changeColor 20s infinite alternate;
+    background-image: var(--gradient);
+}
+
+@keyframes changeColor{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
